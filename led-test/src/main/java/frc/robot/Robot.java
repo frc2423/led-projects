@@ -8,6 +8,8 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import frc.robot.led.Dark;
 import frc.robot.led.HalfAndHalf;
 import frc.robot.led.LedController;
+import frc.robot.led.LedFade;
+import frc.robot.led.LedRotating;
 import frc.robot.led.Snake;
 import frc.robot.led.morsecode;
 import frc.robot.led.rainbow;
@@ -23,6 +25,8 @@ public class Robot extends TimedRobot {
     ledController.add("snake", new Snake()); 
     ledController.add("rainbow", new rainbow()); 
     ledController.add("morsecode", new morsecode()); 
+    ledController.add("LedRotating", new LedRotating()); 
+    ledController.add("LedFade", new LedFade());
   }
 
   @Override
@@ -41,7 +45,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopInit() {
-    ledController.set("morsecode");
+    ledController.set("LedFade");
   }
 
   @Override
