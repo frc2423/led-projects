@@ -17,13 +17,13 @@ public class LedRotating implements Led {
             if (timer.get() > 0) {
                 buffer.setRGB(i, 85, 0, 0);
             }
-            if (timer.get() > 0.5) {
+            if (timer.get() > 0.9) {
                 buffer.setRGB(i, 0, 85, 0);
             }
-            if (timer.get() > 1) {
+            if (timer.get() > 1.8) {
                 buffer.setRGB(i, 0, 0, 85);
             }
-            if (timer.get() > 1.5) {
+            if (timer.get() > 2.7) {
                 timer.reset();
             }
         }

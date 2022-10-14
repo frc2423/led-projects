@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import frc.robot.led.Dark;
 import frc.robot.led.HalfAndHalf;
+import frc.robot.led.LedAlternate;
 import frc.robot.led.LedController;
 import frc.robot.led.LedFade;
 import frc.robot.led.LedRotating;
@@ -27,6 +28,7 @@ public class Robot extends TimedRobot {
     ledController.add("morsecode", new morsecode()); 
     ledController.add("LedRotating", new LedRotating()); 
     ledController.add("LedFade", new LedFade());
+    ledController.add("LedAlternate", new LedAlternate());
   }
 
   @Override
