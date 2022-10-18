@@ -11,6 +11,7 @@ import frc.robot.led.LedAlternate;
 import frc.robot.led.LedController;
 import frc.robot.led.LedFade;
 import frc.robot.led.LedRotating;
+import frc.robot.led.LedRotate2;
 import frc.robot.led.Snake;
 import frc.robot.led.morsecode;
 import frc.robot.led.rainbow;
